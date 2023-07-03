@@ -1,0 +1,438 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' , sans-serif ;
+    -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+    border: 0;
+  }
+  :root{
+    --blue:#017198;
+    --labny:#2eb3eb;
+    --mint:#01f6fe;
+    --gray: #d8e2ea;
+    --move:#d6accf;
+    --dark:#9b8f93;
+  }
+  a{
+    text-decoration:none ;
+  }
+  body{
+    font-size:18px ;
+    background-color:#eee ;
+    min-height: 100vh;
+    text-align: center;
+    display: grid;
+  }
+  .container-fluid{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+    background-color: var(--blue);
+    color: var(--mint);
+  }
+  .dropbtn1 {
+    background-color: var(--blue);
+    margin-right: 100px;
+    display: flex;
+    justify-self:start ;
+    gap: 6px;
+    color:  var(--mint);
+    cursor: pointer;
+    height: 30px;
+    padding-top: 3px;
+    font-size: 18px;
+  }
+  .dropdown1 {
+  position: relative;
+  display: inline-block;
+  }
+  .dropdown-content1 {
+  display: none;
+  position: absolute;
+  background-color:var(--mint);
+  min-width: 160px;
+  z-index: 1;
+  }
+  .dropdown-content1 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  }
+  .dropdown-content1 a:hover {
+    background-color:var(--labny)
+  }
+  .dropdown1:hover .dropdown-content1 {
+  display: block;
+  }
+  .dropdown1:hover .dropbtn1 {
+  background-color: rgba(0, 0, 0, 0.623);
+  } 
+  .ulnav {
+    list-style-type: none;
+    background-color: var(--gray);
+    height:165px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+  }  
+  .img-nav{
+    width: 200px;
+    height: 150px;
+    padding: 15px;
+  }
+  ul li{
+    padding-top: 50px;
+    font-size: 30px;
+    
+  }
+  ul li a{
+    color: var(--labny);
+  }
+  ul div{
+    padding-top: 25px;
+    font-size: 30px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid var(--mint);    
+  }
+  .topnav .search-container button {
+    background: var(--blue);
+    border: 1px solid var(--mint);
+    cursor: pointer;
+    color: var(--mint);
+    width: 50px;
+    text-align: center;
+  }
+  .topnav .search-container button:hover {
+    background: #ccc;
+  }
+  .button{
+    cursor: pointer;
+    color: var(--mint);
+    background-color:var(--blue);
+    border-radius:5px;
+    box-shadow: 0 5px var(--mint);
+    width: 150px;
+    height: 50px;
+  }
+
+
+
+
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(../imgs/pexels-photo.jpg);
+    background-size: cover;
+    border-radius: 10px;
+}
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h1{
+    font-size: 36px;
+    font-weight: 500px;
+    color: #fff;
+}
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content p{
+    font-weight: 300px;
+    color: #fff;
+}
+.contan{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.contan .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.contan .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.contan .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.contan .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 18px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.contan .contactInfo .box .text h2{
+    font-weight: 500;
+    color: #00bcd0;
+    /* #00bcd4 */
+    
+}
+.contactform{
+    width: 40%;
+    padding: 40px;
+    background-color: #fff;
+}
+.contactform h2{
+    font-size: 30px;
+    font-weight: 500;
+    color: #333;
+}
+.contactform .inboutbox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactform .inboutbox input , 
+.contactform .inboutbox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0 ;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactform .inboutbox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0 ;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contactform .inboutbox input:focus ~ span ,
+.contactform .inboutbox input:valid ~ span,
+.contactform .inboutbox textarea:focus ~ span ,
+.contactform .inboutbox textarea:valid ~ span{
+    color: var(--blue);
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactform .inboutbox input[type="submit"]{
+    background-color:  #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+}
+@media (max-width:991px) {
+    .contact{
+        padding: 50px;
+    }
+    .contan{
+        flex-direction: column;
+    }
+    .contan .contactInfo{
+        margin-bottom: 40px;
+    }
+    .contan .contactInfo , .contactform{
+        width: 100%;
+    }
+}
+.map-contianer{
+    width: 100%;
+    height: 70vh;
+    margin: 0 auto;
+    background-color: lightgray;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+iframe{
+    border-radius: 10px;
+}
+
+
+
+
+.singin{
+    background-color:  var(--blue);
+    display: grid;
+    color: white;
+   border-radius: 10px;
+   width: 100%;
+   
+   padding: 10px;
+   
+}
+.btn2{
+    
+    /* height: 40px; */
+    width: 150px;
+    margin-top: 10px;
+    background-color: white ;
+    color: var(--blue);
+    border-radius: 5px;
+    font-size: 20px;
+}
+.psingin{
+    text-align: center;
+}
+.footer {
+    background-color: var(--gray);
+    padding: 50px 0;
+    font-family: Arial, sans-serif;
+  }
+  .footer-content {
+    display: grid;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .contact-info {
+      display: grid;
+      font-size: 30px;
+      text-align: center;
+      place-content: center;
+      
+  }
+  .get-in{
+      text-align: center;
+      display: grid;
+      font-size: 30px;
+      font-weight: bold;
+  }
+  #adres{
+      margin-right: 30px;
+      text-align: left;
+  }
+  .contact-item {
+      display: flex;
+      margin-left: 15%;
+      margin-bottom: 20px;
+      list-style: none;
+      color: var(--blue);
+      margin-right: 50px;
+      width: 100%;
+      
+      
+  }
+  .contact-label {
+      font-weight: bold;
+      display: flex;
+      width: 80px;
+      color: var(--labny);
+      font-size: 25px;
+      margin-right: 10px;
+      
+  }
+  .contact-text {
+      display: grid;
+      margin-left: 10px;
+      font-size: 20px;
+      margin-left: 5px;
+  }
+  .scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--blue);
+    color: var(--mint);
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  .scroll-to-top:hover {
+    background-color: var(--gray);
+    color: var(--labny);
+  }
+  
+  .about-us-hr{
+      width: 40%;
+      border: 2px solid var(--mint);
+      margin-left: 30%;
+  }
+  /* About us styles */
+  .about-us {
+    margin-top: 50px;
+    max-width: 800px;
+    margin: 50px auto 0;
+    text-align: center;
+    color: var(--blue);
+  }
+  
+  .about-us p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .read-more {
+    display: inline-block;
+    font-size: 14px;
+    color: var(--labny);
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .read-more:hover {
+    color: var(--dark);
+  }
+  
+  .about-us.expanded p {
+    max-height: none;
+    overflow: visible;
+    transition: max-height 0.5s ease-in-out;
+  }
+  
+  .about-us.expanded .read-more {
+    display: none;
+  }
+  
+  
+  
+  footer{
+      background-color:  var(--blue);
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     color: var(--mint);
+     text-align: center;
+     height: 40px;
+     padding: 10px;
+  }
+  span{
+      color: var(--dark);
+  }
+  .pd3{
+      color: #868282;
+  }
+  .s1{
+      color: var(--labny);
+  } 
